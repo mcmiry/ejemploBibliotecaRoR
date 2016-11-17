@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biblioteca</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= yield %>
+  <!-- <div>
+    <% Autor.find_each do |autor| %>
+      <%= autor.nombre %>
+      <%= autor.apellidos %>
+      <%= simple_format("\n") %>
+      <% Libro.find_each do |libro| %>
+        <% if libro.autor == autor %>
+          <%= libro.titulo %>
+          <%= simple_format("\n") %>
+        <% end %>
+      <% end %>
+      <%= simple_format("\n") %>
+    <% end %> 
+  </div> -->
+
+</body>
+</html>
